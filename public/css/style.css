@@ -1,0 +1,181 @@
+@import url('login.css');
+
+body {
+	font-family: 'Lato';
+	margin: 0;
+	padding: 0;
+	background: #fffffb
+}
+
+table, th, td {
+   border: 1px solid #c3c3c3;
+   text-align: left;
+   padding: 8px;
+   font-size: 20px;
+}
+
+table tr {
+	background: #fff;
+}
+
+table img {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	color: #3c3c3c;
+}
+
+th:nth-child(1) {
+	width: 250px;
+}
+
+th:nth-child(5) {
+	width: 20px;
+}
+
+th:nth-child(6) {
+	width: 150px;
+}
+
+#author-table th:nth-child(1) {
+	width: calc(100% - 150px);
+}
+
+#author-table th:nth-child(2) {
+	width: 150px;
+}
+
+a {
+	text-decoration: none;
+	color: #a5a5a5;
+	transition: 0.5s;
+}
+
+.red {
+	color: #CB1B45;
+}
+
+.greed {
+	color: #227D51;
+}
+
+.container {
+	width: 1500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title {
+	font-size: 70px;
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul > li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+ul > li > a {
+	box-sizing: border-box;
+	color: #333;
+	border-bottom: 2px solid #fffffb;
+	font-size: 20px;
+	padding: 8px;
+	transition: 0.5s;
+}
+
+ul > li > a:hover {
+	box-sizing: border-box;
+	border-bottom: 2px solid #333;
+}
+
+.btn-b {
+	background: #005CAF;
+	color: #FCFAF2;
+	border: 0;
+	border-radius: 5px;
+	padding: 8px 25px;
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.5s;
+	font-family: 'Lato';
+}
+
+.btn-b:hover {
+	background: #0B346E;
+}
+
+.active {
+	color: #91989F;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-5 {
+	margin-right: 10px;
+}
+
+.clicked {
+	color: #333;
+}
+
+#admin-head {
+	box-sizing: border-box;
+	width: 100%;
+	height: 70px;
+	background-image: linear-gradient(145deg,#D0104C,#005CAF,#227D51);
+	position: relative;
+	margin-bottom: 15px;
+	font-size: 36px;
+	color:#fffffb;
+	line-height: 70px;
+}
+
+.admin-nav {
+	height: 50px;
+}
+
+#addbook {
+	margin-bottom: 20px;
+}
+
+#addbook input {
+	width: 500px;
+}
+
+#edit-img {
+	width: 200px;
+}
+
+@keyframes shake {
+	0% {transform: translate(0%, 0%);}
+	25% {transform: translate(5%, 0%);}
+	75% {transform: translate(-5%, 0%);}
+	100% {transform: translate(0%, 0%);}
+}
+
+.shake {
+	animation: shake 0.35s linear 0.15s 2 backwards;
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(1deg);}
+	75% {transform: rotate(-1deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.rotate {
+	animation: rotate 0.35s linear 0.15s 2 backwards;
+}

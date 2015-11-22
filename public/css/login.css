@@ -1,0 +1,121 @@
+#login-form {
+	box-sizing: border-box;
+	width: 550px;
+	border: 1px solid #828282;
+	border-left: 5px solid #828282;
+	border-right: 5px solid #828282;
+	border-radius: 5px;
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+}
+
+#login-title {
+	width: 555px;
+	position: absolute;
+	bottom: 115px;
+	left: -60px;
+	border: 1px solid #fff;
+	font-size: 36px;
+	color: #828282;
+}
+
+#username, #password {
+	border: 0;
+	border-bottom: 1px solid #828282;
+	color: #828282;
+	width: 300px;
+	height: 30px;
+	padding: 5px 15px;
+	font-size: 18px;
+	background: #fff;
+}
+
+#username:focus, #password:focus {
+	outline: none;
+	background: #f9f9f9;
+}
+
+.label {
+	position: absolute;
+	bottom: 10px;
+	left: 65px;
+	font-size: 20px;
+	pointer-events: none;
+	color: #828282;
+}
+
+.form-group {
+	margin: 50px;
+	position: relative;
+	display: block;
+}
+
+.btn-b {
+	background: #005CAF;
+	color: #FCFAF2;
+	border: 0;
+	border-radius: 5px;
+	padding: 8px 25px;
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.5s;
+	font-family: 'Lato';
+}
+
+.btn-b:hover {
+	background: #0B346E;
+}
+
+.fa-lock, .fa-user, .fa-key, .fa-exclamation-triangle {
+	margin-right: 10px;
+}
+
+.error {
+	color: #CB1B45;
+}
+
+.error-box {
+	box-sizing: border-box;
+	width: 550px;
+	position: absolute;
+	top: 120px;
+	left: -55px;
+	border: 1px solid #CB1B45;
+	border-left: 5px solid #CB1B45;
+	border-right: 5px solid #CB1B45;
+	border-radius: 5px;
+	background: #FEDFE1;
+}
+
+@media screen and (max-width: 360px) {
+	#login-form {
+		width: 350px;
+	}
+
+	#username, #password {
+		width: 200px;
+		padding: 5px 15px;
+		font-size: 18px;
+	}
+
+	#login-title {
+		width: 350px;
+	}
+
+	.label {
+		left: 10px;
+	}
+
+	.error-box {
+		width: 350px;
+	}
+
+	.container {
+		width: 100%;
+	}
+}
